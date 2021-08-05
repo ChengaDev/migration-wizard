@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const SourceDestPicker = () => {
   return (
-    <div className="container">
+    <Container className="container">
       <div className="row">
         <Section className="col-6">
           <h3>Select Source Service</h3>
@@ -32,9 +32,23 @@ const SourceDestPicker = () => {
           </div>
         </Section>
       </div>
-    </div>
+    </Container>
   );
 };
+
+const Container = styled.div`
+  animation: fadeIn 1s;
+  opacity: 1;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
 
 const DynamicsLogo = styled.img`
   width: 300px !important;

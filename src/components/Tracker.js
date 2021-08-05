@@ -31,6 +31,7 @@ const Container = styled.div`
 `;
 
 const Step = styled.div`
+  transition: background-color 1s ease;
   font-size: 40px;
   height: 100px;
   border-right: 1px solid lightgray;

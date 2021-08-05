@@ -41,6 +41,18 @@ const ObjectsMapper = ({ sourceObjects, destObjects }) => {
 };
 
 const Container = styled.div`
+  animation: fadeIn 1s;
+  opacity: 1;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   border: 1px solid lightgray;
   margin-top: 80px;
   padding: 30px;

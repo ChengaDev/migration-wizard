@@ -32,6 +32,18 @@ export default () => (
 );
 
 const Container = styled.div`
+  animation: fadeIn 1s;
+  opacity: 1;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   margin-top: 50px;
   text-align: center;
 
