@@ -31,12 +31,14 @@ const Container = styled.div`
 `;
 
 const ObjectDisplay = styled.div`
-  font-size: 22px;
-  margin-top: 10px;
+  font-size: 18px;
   cursor: pointer;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   &:hover {
-    font-weight: bold;
+    background-color: rgb(219, 244, 255);
   }
 
   font-weight: ${(props) => (props.isSelected ? "bold" : "400")};

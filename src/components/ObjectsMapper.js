@@ -2,6 +2,7 @@ import { useState } from "react";
 import ObjectList from "../components/ObjectList";
 import FieldsList from "../components/FieldsList";
 import MapModal from "../components/MapModal";
+import styled from "styled-components";
 
 const ObjectsMapper = ({ sourceObjects, destObjects }) => {
   const [showModal, setShowModal] = useState(false);
@@ -20,7 +21,7 @@ const ObjectsMapper = ({ sourceObjects, destObjects }) => {
   };
 
   return (
-    <div className="row">
+    <Container className="row">
       <ObjectList
         objects={sourceObjects}
         onObjectClick={onObjectClick}
@@ -35,8 +36,17 @@ const ObjectsMapper = ({ sourceObjects, destObjects }) => {
           destObjects={destObjects}
         />
       )}
-    </div>
+    </Container>
   );
 };
+
+const Container = styled.div`
+  border: 1px solid lightgray;
+  margin-top: 80px;
+  padding: 30px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 30px;
+`;
 
 export default ObjectsMapper;

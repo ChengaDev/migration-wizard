@@ -1,5 +1,6 @@
 import Select, { components } from "react-select";
 import styled from "styled-components";
+import migration from "../images/migration.jpg";
 
 const MultiValueLabel = (props) => {
   return <components.MultiValueLabel {...props} />;
@@ -26,15 +27,22 @@ export default () => (
         { label: "Contact", value: "Contact" },
       ]}
     />
+    <img src={migration} />
   </Container>
 );
 
 const Container = styled.div`
-  margin-top: 120px;
+  margin-top: 50px;
+  text-align: center;
 
   h2 {
     width: 100%;
     text-align: center;
     margin-bottom: 75px;
+  }
+
+  img {
+    margin-top: 50px;
+    width: 600px;
   }
 `;

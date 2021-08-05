@@ -30,12 +30,16 @@ const Container = styled.div`
 `;
 
 const ObjectDisplay = styled.div`
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  border-radius: 5px;
   cursor: pointer;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
 
   &:hover {
-    font-weight: bold;
+    background-color: rgb(219, 244, 255);
   }
 `;
 

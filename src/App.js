@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <Container className="container">
-        <h1>OwnBackup Migration tool</h1>
+        <h1>Data Migration tool</h1>
 
         {currentStep > 1 && (
           <PrevButton>
